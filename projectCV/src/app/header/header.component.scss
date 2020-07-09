@@ -1,0 +1,94 @@
+.pageName{
+  position: absolute;
+  left: 80px;
+  top: 60px;
+  color: white;
+
+  a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 78px;
+  }
+}
+
+.iconDiv{
+  position: absolute;
+  left: 1090px;
+  top: 85px;
+  height: 60px;
+
+  img{
+    background: white;
+    border-radius: 50px;
+  }
+}
+
+.backDiv{
+  position: absolute;
+  width: 1348px;
+  height: 300px;
+  left: 0px;
+  top: 0px;
+
+  background: #000000;
+}
+
+.fontDiv{
+  position: absolute;
+  width: 700px;
+  height: 300px;
+  left: 310px;
+  top: 150px;
+
+  background: #05B67D;
+  color: white;
+
+  .userName{
+    margin: 30px 0px 0px 400px;
+    font-size: 24px;
+  }
+
+  .userInf{
+    margin: 70px 0px 0px 330px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  hr{
+    margin-left: 350px;
+    width: 300px;
+  }
+}
+
+.imgDiv{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 310px;
+  top: 150px;
+
+  background: black;
+
+  img{
+    margin-left: 50px;
+    width: 225px;
+    height: 300px;
+  }
+}
+
+.messengerDiv{
+  position: absolute;
+  width: 400px;
+  height: 50px;
+  left: 610px;
+  top: 400px;
+
+  background: #000000;
+
+  img{
+    background: white;
+    border-radius: 50px;
+  }
+}

@@ -1,0 +1,66 @@
+.projectDiv{
+  position: absolute;
+  width: 700px;
+  left: 310px;
+  top: 478px;
+
+  p{
+    margin: 10px 0px 0px 25px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  a{
+    margin: 5px 0px 0px 25px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .inDiv{
+    position: relative;
+    width: 700px;
+    height: 200px;
+
+    border: 1px black solid;
+    background: #05B67D;
+    color: white;
+
+    .messengerDiv{
+      position: absolute;
+      width: 700px;
+      height: 50px;
+      bottom: 0px;
+
+      background: black;
+
+      img{
+        margin-left: 325px;
+        border-radius: 50px;
+
+        background: white;
+      }
+    }
+  }
+
+  button{
+    width: 240px;
+    height: 80px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    margin: 10px 0px 0px 0px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: white;
+    background: black;
+  }
+}

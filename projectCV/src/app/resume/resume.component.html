@@ -1,0 +1,12 @@
+<div class="projectDiv">
+
+  <div class="inDiv" *ngFor="let resume of resumes" style="margin-top: 1px">
+    <p style="">Язык резюме:</p><a>{{resume.languageResume}}</a>
+
+    <div class="messengerDiv">
+      <a href="{{resume.resumeURL}}"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" style="width: 50px; height: 50px"></a>
+    </div>
+  </div>
+
+  <button mat-flat-button routerLink="/" routerLinkActive="active">Главная</button>
+</div>

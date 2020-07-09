@@ -1,0 +1,30 @@
+<div class="backDiv"></div>
+
+<div class="pageName"><a>BIOcard</a></div>
+
+<div class="iconDiv" *ngFor="let user of users">
+  <a href="{{user.instagramURl}}"><img src="https://image.flaticon.com/icons/svg/1384/1384015.svg" style="width: 60px; height: 60px;"></a>
+  <a><img src="https://image.flaticon.com/icons/svg/1384/1384005.svg" style="width: 60px; height: 60px;"></a>
+  <a><img src="https://image.flaticon.com/icons/svg/1384/1384007.svg" style="width: 60px; height: 60px;"></a>
+  <a><img src="https://image.flaticon.com/icons/svg/1384/1384017.svg" style="width: 60px; height: 60px;"></a>
+</div>
+
+<div class="fontDiv" *ngFor="let user of users">
+  <br>
+  <a class="userName">{{user.surname}} {{user.name}}</a>
+  <hr>
+  <a class="userInf">Возраст: {{user.age}}</a><br><br>
+  <a class="userInf">Email:   {{user.email}}</a><br><br>
+  <a class="userInf">Телефон: {{user.phone}}</a><br><br>
+  <a class="userInf">Адрес: {{user.address}}</a>
+</div>
+
+<div class="imgDiv" *ngFor="let user of users"><img src="{{user.imgUrl}}"></div>
+
+<div class="messengerDiv" *ngFor="let user of users">
+  <a href="{{user.instagramURl}}"style="margin-left: 100px"><img src="https://image.flaticon.com/icons/svg/1384/1384015.svg" style="width: 50px; height: 50px;"></a>
+  <a><img src="https://image.flaticon.com/icons/svg/1384/1384005.svg" style="width: 50px; height: 50px;"></a>
+  <a><img src="https://image.flaticon.com/icons/svg/1384/1384007.svg" style="width: 50px; height: 50px;"></a>
+  <a><img src="https://image.flaticon.com/icons/svg/1384/1384017.svg" style="width: 50px; height: 50px;"></a>
+</div>
+

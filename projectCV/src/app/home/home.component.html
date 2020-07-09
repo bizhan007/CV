@@ -1,0 +1,82 @@
+<div class="contentDiv">
+  <mat-tab-group mat-align-tabs="center">
+
+    <mat-tab label="Обо мне">
+      <div class="contentInDiv"><br>
+        <a style="margin: 25px">{{contents[3].aboutMe}}</a>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Образование">
+      <div class="contentInDiv" style="background: white" >
+        <span class="inDiv" *ngFor="let content of contents">
+          <a class="education">{{content.education}} - </a><br>
+          <a class="aboutEducation">{{content.aboutEducation}}</a>
+        </span>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Навыки">
+      <div class="contentInDiv" style="background: white">
+        <span class="inDiv" *ngFor="let content of contents">
+          <a class="education">{{content.education}} - </a><br>
+          <mat-slider disabled [(ngModel)]="content.educationSkill"></mat-slider>
+        </span>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Языки">
+      <div class="contentInDiv" >
+        <div class="divLanguage" >
+          <a>{{contents[3].language}}</a><br>
+          <mat-slider disabled [(ngModel)]="contents[3].languageLvl"></mat-slider><br>
+          <a>{{contents[1].language}}</a><br>
+          <mat-slider disabled [(ngModel)]="contents[1].languageLvl"></mat-slider><br>
+          <a>{{contents[0].language}}</a><br>
+          <mat-slider disabled [(ngModel)]="contents[0].languageLvl"></mat-slider>
+      </div>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>
+
+<button class="projectButton" mat-flat-button routerLink="/project" routerLinkActive="active">Проекты</button>
+<button class="resumeButton"  mat-flat-button routerLink="/resume" routerLinkActive="active">Резюме</button>
+
+<div class="contactNameDiv"><a>Контакты</a></div>
+
+<div class="contactDiv">
+  <form>
+    <mat-form-field>
+      <mat-label>Имя</mat-label>
+      <input matInput placeholder="Имя" style="width: 140px">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Email" style="width: 140px">
+    </mat-form-field><br>
+    <mat-form-field>
+      <mat-label>Тема</mat-label>
+      <input matInput placeholder="Тема" style="width: 170px">
+    </mat-form-field>
+    <button mat-mini-fab color="white" style="height: 40px;width: 40px"><mat-icon> local_post_office</mat-icon></button><br>
+    <mat-form-field>
+      <mat-label style="color: black">Сообщение...</mat-label>
+      <textarea matInput placeholder="Сообщение..." style="width: 200px; height: 70px; background: white; color: black"></textarea>
+    </mat-form-field>
+  </form>
+</div>
+
+<div class="contactInDiv" *ngFor="let user of users">
+  <a>Email: <mat-icon> mail_outline</mat-icon></a><br>
+     <a>{{user.email}}</a><br><br>
+  <a>Телефон: <mat-icon> phone</mat-icon> </a><br>
+    <a> {{user.phone}}</a>
+  <div class="messengerDiv">
+    <a href="{{user.instagramURl}}"><img src="https://image.flaticon.com/icons/svg/1384/1384015.svg" style="width: 50px; height: 50px; margin-left: 30px"></a>
+    <a><img src="https://image.flaticon.com/icons/svg/1384/1384005.svg" style="width: 50px; height: 50px;"></a>
+    <a><img src="https://image.flaticon.com/icons/svg/1384/1384007.svg" style="width: 50px; height: 50px;"></a>
+    <a><img src="https://image.flaticon.com/icons/svg/1384/1384017.svg" style="width: 50px; height: 50px;"></a>
+  </div>
+</div>
+

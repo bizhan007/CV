@@ -1,0 +1,165 @@
+.contentDiv {
+  position: absolute;
+  width: 700px;
+  left: 310px;
+  top: 478px;
+
+  .contentInDiv {
+    width: 700px;
+    height: 300px;
+
+    background: #05B67D;
+    color: white;
+
+    font-style: normal;
+    font-weight: normal;
+
+    .inDiv{
+      margin: 1px;
+      float: left;
+      width: 345px;
+      height: 145px;
+
+      border: black 1px solid;
+      background: #05B67D;
+
+      .education{
+        margin: 10px 0px 0px 50px;
+        font-size: 18px;
+      }
+
+      .aboutEducation{
+        margin: 10px 0px 0px 50px;
+        font-size: 15px;
+      }
+
+      mat-slider{
+        margin: 10px 0px 0px 10px;
+        width: 150px;
+      }
+    }
+  }
+
+  .divLanguage{
+    margin-left: 180px;
+
+    mat-slider,a{
+      width: 300px;
+      margin: 10px 0px 0px 0px;
+      font-size: 17px;
+    }
+  }
+}
+
+button{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.projectButton{
+  position: absolute;
+  width: 240px;
+  height: 80px;
+  left: 310px;
+  top: 840px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+
+  color: white;
+  background: black;
+}
+
+.resumeButton{
+  position: absolute;
+  width: 240px;
+  height: 80px;
+  left: 770px;
+  top: 840px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+
+  color: white;
+  background: black;
+}
+
+.contactNameDiv{
+  position: absolute;
+  width: 300px;
+  height: 20px;
+  left: 513px;
+  top: 943px;
+
+  background: #000000;
+  color: white;
+
+  a{
+    margin-left: 100px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.contactDiv{
+  position: absolute;
+  width: 700px;
+  height: 300px;
+  left: 310px;
+  top: 963px;
+
+  background: #000000;
+
+  form{
+    margin-left: 330px;
+
+    color: white;
+
+    input{
+      border-bottom: 1px white solid;
+    }
+    mat-label{
+      color: white;
+    }
+  }
+}
+
+.contactInDiv {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 310px;
+  top: 963px;
+
+  background: #05B67D;
+  color: white;
+
+  a {
+    margin: 20px 0px 0px 25px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.messengerDiv{
+  position: absolute;
+  top:250px;
+  width: 300px;
+  height: 50px;
+
+  background: black;
+
+  img{
+    border-radius: 50px;
+
+    background: white;
+  }
+
+  a{
+    margin: 0px 0px 0px 10px;
+  }
+}
